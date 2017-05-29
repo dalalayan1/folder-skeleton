@@ -1,5 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import MainComponent from './components/main-component.js';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import { Router, Route, Link, browserHistory,IndexRoute} from 'react-router';
 
-ReactDOM.render(<MainComponent />, document.getElementById('app-root'));
+import configureStore from './store/configureStore';
+
+import Maincomponent from './containers/main-container.js';
+
+const store=configureStore();
+
+render(
+	<Provider store={store}>
+		<Maincomponent />
+	</Provider>,
+	document.getElementById('app-root')
+	);

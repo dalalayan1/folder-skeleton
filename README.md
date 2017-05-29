@@ -1,15 +1,9 @@
-# react-sample-app
-A sample app to show working of react with webpack.</br>
-Has support for both sass & less.
+# folder-skeleton
+Has folder-skeleton for different frameworks/requirements.</br>
+This repo is cloned to fetch folder-skeleton and corresponding branch is chosen as per requirements.
 
-## commands to run the app
-
-`npm install` </br>
-`npm start` - start webpack-dev-server </br>
-`npm run build` - build webpack </br>
-
-### Issues faced 
-While bundling, the style-loader might create a problem - "node-sass not found" </br>
-In that case, do  - `npm install node-sass --no-bin-links` </br>
-
-While bundling, in case you are using less files, install less along with less-loader </br>
+## Has 4 branches - 
+`pure-react` - switch to this branch when you need pure-react in your project </br>
+`react-redux` - switch to this branch when you need react-redux in your project </br>
+`gulp` - switch to this branch when you need gulp in your project </br>
+`webpack` - switch to this branch when you need webpack in your project </br>
